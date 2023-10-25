@@ -47,4 +47,14 @@ document.addEventListener("click", (e) => {
       }
     }
   }
+
+  if (e.target.classList.contains("category-about__more-btn")) {
+    let parent = e.target.closest(".category-about__body");
+    parent.classList.toggle("active");
+
+    parent.querySelectorAll(".category-about__more-btn").forEach((el) => {
+      el.style.display = "block";
+    });
+    e.target.style.display = "none";
+  }
 });

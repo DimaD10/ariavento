@@ -68,10 +68,6 @@ const sertificatesFullscreen = new Swiper(".sertificates__slider-fullscreen", {
 
   slidesPerView: 1,
   spaceBetween: 20,
-
-  thumbs: {
-    swiper: sertificates,
-  },
 });
 
 const productivity = new Swiper(".productivity__slider", {
@@ -121,10 +117,6 @@ const productivityFullscreen = new Swiper(".productivity__fullscreen-slider", {
 
   slidesPerView: 1,
   spaceBetween: 20,
-
-  thumbs: {
-    swiper: productivity,
-  },
 });
 
 const reviews = new Swiper(".reviews__slider", {
@@ -172,8 +164,37 @@ const reviewsFullscreen = new Swiper(".reviews__fullscreen-slider", {
 
   slidesPerView: 1,
   spaceBetween: 20,
+});
 
-  thumbs: {
-    swiper: reviews,
+
+const sameProducts = new Swiper(".same-products__slider", {
+  loop: true,
+
+  pagination: {
+    el: ".same-products__pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".same-products__slider-btn_next",
+    prevEl: ".same-products__slider-btn_prev",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 4,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 14,
+    },
+    668: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
   },
 });

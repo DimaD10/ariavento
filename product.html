@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Ariavento</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="icon" href="img/favicon.png" >
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__wrapper">
+            <div class="header-top">
+              <a href="index.html" class="logo">
+                <span class="logo__icon">
+                  <img src="./img/logo.svg" alt="Ariavento" >
+                </span>
+                <span class="logo__text">
+                  Группа компаний «Алекс Инижиниринг»
+                </span>
+              </a>
+
+              <div class="user-actions">
+                <div class="user-actions__el">
+                  <div class="user-actions__icon">
+                    <img src="./img/icons/location.svg" alt="location" >
+                  </div>
+                  <address class="user-actions__value">
+                    г. Москва, Космонавта Волкова 20
+                  </address>
+                </div>
+                <div class="user-actions__el">
+                  <div class="user-actions__icon">
+                    <img src="./img/icons/email.svg" alt="email" >
+                  </div>
+                  <a href="mailto:info@ariavento.ru" class="user-actions__value"
+                    >info@ariavento.ru</a
+                  >
+                </div>
+                <div class="user-actions__el">
+                  <div class="user-actions__icon">
+                    <img src="./img/icons/phone.svg" alt="phone" >
+                  </div>
+                  <a href="mailto:+74993946272" class="user-actions__value"
+                    >+7 (499) 394-62-72</a
+                  >
+                </div>
+              </div>
+
+              <button class="header__button button button_stroke open-order-call">
+                Обратный звонок
+              </button>
+
+              <button class="search-btn">
+                <img src="./img/icons/search-icon-blue.svg" alt="" >
+              </button>
+
+              <button class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="header-sticky">
+              <div class="page-navigation">
+                <ul>
+                  <li>
+                    <a href="#">Продукция </a>
+                  </li>
+                  <li>
+                    <a href="#">О компании </a>
+                  </li>
+                  <li>
+                    <a href="#">Сертификаты </a>
+                  </li>
+                  <li>
+                    <a href="#">Проекты </a>
+                  </li>
+                  <li>
+                    <a href="#">Отзывы </a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="user-actions">
+                <div class="user-actions__el">
+                  <div class="user-actions__icon">
+                    <img src="./img/icons/location.svg" alt="location" >
+                  </div>
+                  <address class="user-actions__value">
+                    г. Москва, Космонавта Волкова 20
+                  </address>
+                </div>
+                <div class="user-actions__el">
+                  <div class="user-actions__icon">
+                    <img src="./img/icons/email.svg" alt="email" >
+                  </div>
+                  <a href="mailto:info@ariavento.ru" class="user-actions__value"
+                    >info@ariavento.ru</a
+                  >
+                </div>
+                <div class="user-actions__el">
+                  <div class="user-actions__icon">
+                    <img src="./img/icons/phone.svg" alt="phone" >
+                  </div>
+                  <a href="mailto:+74993946272" class="user-actions__value"
+                    >+7 (499) 394-62-72</a
+                  >
+                </div>
+              </div>
+
+              <div class="monotype-logo">
+                <div class="monotype-logo__icon">
+                  <img src="./img/monotype-logo.svg" alt="" >
+                </div>
+                <div class="monotype-logo__text">
+                  Группа компаний <br >
+                  «Алекс Инижиниринг»
+                </div>
+              </div>
+
+              <div class="search-field">
+                <div class="search-field__wrapper">
+                  <button class="search-field__search-icon">
+                    <svg
+                      width="19"
+                      height="20"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <circle
+                          cx="9.09259"
+                          cy="9.09259"
+                          r="7.59259"
+                          stroke="white" />
+                        <line
+                          x1="18.9201"
+                          y1="20.3293"
+                          x2="13.9942"
+                          y2="14.6996"
+                          stroke="white" />
+                      </g>
+                    </svg>
+                  </button>
+
+                  <input
+                    type="text"
+                    class="search-field__input"
+                    placeholder="Поиск" >
+
+                  <button class="search-field__close-btn">
+                    <img src="./img/icons/cross-icon.svg" alt="" >
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-field search-field_mobile">
+              <div class="search-field__wrapper">
+                <button class="search-field__search-icon">
+                  <svg
+                    width="19"
+                    height="20"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <circle
+                        cx="9.09259"
+                        cy="9.09259"
+                        r="7.59259"
+                        stroke="white" />
+                      <line
+                        x1="18.9201"
+                        y1="20.3293"
+                        x2="13.9942"
+                        y2="14.6996"
+                        stroke="white" />
+                    </g>
+                  </svg>
+                </button>
+
+                <input
+                  type="text"
+                  class="search-field__input"
+                  placeholder="Поиск" >
+
+                <button class="search-field__close-btn">
+                  <img src="./img/icons/cross-icon.svg" alt="" >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__breadcrumps breadcrumps">
+            <div class="breadcrumps__container">
+                <div class="breadcrumps__wrapper">
+                    <div class="breadcrumps__body">
+                        <span class="breadcrumps__point">
+                            <a href="#">Продукция</a>
+                        </span>
+                        <span class="breadcrumps__point breadcrumps__point_current">Детали системы вентиляции</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="main__same-products same-products">
+            <div class="same-products__container">
+                <div class="same-products__wrapper">
+                    <h2 class="same-products__title title">Сопутствующая продукция</h2>
+
+                    <div class="same-products__body">
+                        <div class="same-products__slider">
+                            <div class="swiper-wrapper">
+                                <div class="product-card swiper-slide">
+                                    <a href="#" class="product-card__preview">
+                                        <img src="./img/prod-types/img1.png" alt="">
+                                    </a>
+                                    <div class="product-card__body">
+                                        <span class="product-card__code">Артикул изделия</span>
+                                        <h3 class="product-card__title">Дефлекторы</h3>
+                                    </div>
+
+                                    <button class="product-card__button button button_stroke">Подробнее</button>
+                                </div>
+
+                                <div class="product-card swiper-slide">
+                                    <a href="#" class="product-card__preview">
+                                        <img src="./img/prod-types/img1.png" alt="">
+                                    </a>
+                                    <div class="product-card__body">
+                                        <span class="product-card__code">Артикул изделия</span>
+                                        <h3 class="product-card__title">Воздушные клапан круглый</h3>
+                                    </div>
+
+                                    <button class="product-card__button button button_stroke">Подробнее</button>
+                                </div>
+
+                                <div class="product-card swiper-slide">
+                                    <a href="#" class="product-card__preview">
+                                        <img src="./img/prod-types/img1.png" alt="">
+                                    </a>
+                                    <div class="product-card__body">
+                                        <span class="product-card__code">Артикул изделия</span>
+                                        <h3 class="product-card__title">Дроссель-клапан круглый</h3>
+                                    </div>
+
+                                    <button class="product-card__button button button_stroke">Подробнее</button>
+                                </div>
+
+                                <div class="product-card swiper-slide">
+                                    <a href="#" class="product-card__preview">
+                                        <img src="./img/prod-types/img1.png" alt="">
+                                    </a>
+                                    <div class="product-card__body">
+                                        <span class="product-card__code">Артикул изделия</span>
+                                        <h3 class="product-card__title">Дроссель клапан прямоугольный с ручным управлением</h3>
+                                    </div>
+
+                                    <button class="product-card__button button button_stroke">Подробнее</button>
+                                </div>
+
+                                <div class="product-card swiper-slide">
+                                    <a href="#" class="product-card__preview">
+                                        <img src="./img/prod-types/img1.png" alt="">
+                                    </a>
+                                    <div class="product-card__body">
+                                        <span class="product-card__code">Артикул изделия</span>
+                                        <h3 class="product-card__title">Шибер прямоугольный из оцинкованной стали</h3>
+                                    </div>
+
+                                    <button class="product-card__button button button_stroke">Подробнее</button>
+                                </div>
+
+                                <div class="product-card swiper-slide">
+                                    <a href="#" class="product-card__preview">
+                                        <img src="./img/prod-types/img1.png" alt="">
+                                    </a>
+                                    <div class="product-card__body">
+                                        <span class="product-card__code">Артикул изделия</span>
+                                        <h3 class="product-card__title">Зонт круглый</h3>
+                                    </div>
+
+                                    <button class="product-card__button button button_stroke">Подробнее</button>
+                                </div>
+
+                                <div class="product-card swiper-slide">
+                                    <a href="#" class="product-card__preview">
+                                        <img src="./img/prod-types/img1.png" alt="">
+                                    </a>
+                                    <div class="product-card__body">
+                                        <span class="product-card__code">Артикул изделия</span>
+                                        <h3 class="product-card__title">Шумоглушитель трубчатый круглый</h3>
+                                    </div>
+
+                                    <button class="product-card__button button button_stroke">Подробнее</button>
+                                </div>
+
+                                <div class="product-card swiper-slide">
+                                    <a href="#" class="product-card__preview">
+                                        <img src="./img/prod-types/img1.png" alt="">
+                                    </a>
+                                    <div class="product-card__body">
+                                        <span class="product-card__code">Артикул изделия</span>
+                                        <h3 class="product-card__title">Шумоглушитель пластинчатый</h3>
+                                    </div>
+
+                                    <button class="product-card__button button button_stroke">Подробнее</button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination same-products__pagination"></div>
+                        </div>
+
+                        <div class="swiper-button-prev same-products__slider-btn same-products__slider-btn_prev"></div>
+                        <div class="swiper-button-next same-products__slider-btn same-products__slider-btn_next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__sertificates sertificates">
+          <div class="sertificates__container">
+            <div class="sertificates__wrapper">
+              <h2 class="sertificates__title title">Сертификаты</h2>
+              <div class="sertificates__body fullscreen-slider">
+                <div class="sertificates__slider fullscreen-slider__main-slider">
+                  <div class="swiper-wrapper">
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+                    <div class="sertificates__image swiper-slide" data-fancybox data-src="#sertificate-fullscreen-slider">
+                      <img src="./img/sertificate.png" alt="" >
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination sertificates__pagination"></div>
+                </div>
+
+                <div class="fullscreen-slider__parrent">
+                  <div class="fullscreen-slider__wrapper">
+                    <button class="fullscreen-slider__close-btn">
+                      <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path d="M21.1201 2.12L13.2401 10L21.1201 17.88L19.0001 20L9.00012 10L19.0001 0L21.1201 2.12Z" fill="white"/>
+                          <path d="M0 2.12L7.88 10L0 17.88L2.12 20L12.12 10L2.12 0L0 2.12Z" fill="white"/>
+                        </g>
+                      </svg>
+                    </button>
+                    <div class="sertificates__slider-fullscreen fullscreen-slider__slider">
+                      <div class="swiper-wrapper">
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+                        <div class="sertificates__image swiper-slide">
+                          <img src="./img/sertificate.png" alt="" >
+                        </div>
+                      </div>
+
+                      <div class="swiper-pagination sertificates__pagination"></div>
+                    </div>
+
+                    <div
+                      class="swiper-button-prev sertificates__slider-fullscreen-btn sertificates__slider-fullscreen-btn_prev"></div>
+                    <div
+                      class="swiper-button-next sertificates__slider-fullscreen-btn sertificates__slider-fullscreen-btn_next"></div>
+                  </div>
+                </div>
+
+
+                <div
+                  class="swiper-button-prev sertificates__slider-btn sertificates__slider-btn_prev"></div>
+                <div
+                  class="swiper-button-next sertificates__slider-btn sertificates__slider-btn_next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__request request">
+          <div class="request__container">
+            <div class="request__wrapper">
+              <div class="request__lines">
+                <img src="img/decor/decor-green.svg" alt="" >
+              </div>
+              <div class="request__title">
+                <h2 class="request__main-title">Оставить заявку</h2>
+                <p class="request__subtitle">
+                  Оставьте заявку и получите <br >
+                  спецпредложение
+                </p>
+              </div>
+              <div class="request__main-form">
+                <form class="request__form" action="#">
+                  <input class="input-field request-input" placeholder="Имя" >
+                  <input
+                    class="input-field request-input"
+                    placeholder="Телефон" >
+                  <button class="button button_filled request-btn">
+                    Отправить
+                  </button>
+                </form>
+                <div class="request__text">
+                  <p>
+                    Нажимая кнопку Вы соглашаетесь с
+                    <a class="politic__data" href="#"
+                      >Политикой обработки персональных данных</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__map">
+          <div class="footer__popup">
+            <div class="footer__popup-container">
+              <form class="footer__form" action="#" method="post">
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Имя"
+                  name="firstname"
+                   >
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Телефон"
+                  name="tel"
+                   >
+                <div
+                  class="footer__agreement agreement"
+                  style="margin-top: 20px">
+                  <input type="checkbox" id="agreement" >
+                  <label
+                    for="agreement"
+                    class="agreement__custom-checkbox"></label>
+
+                  <label for="agreement" class="footer__personal">
+                    Нажимая кнопку «Отправить заявку» Вы <br >
+                    соглашаетесь с
+                    <a class="footer__personal-data" href="#"
+                      >Политикой обработки <br >
+                      персональных данных</a
+                    >
+                  </label>
+                </div>
+                <button
+                  class="footer__input-btn button button_filled"
+                  type="submit">
+                  Отправить заявку
+                </button>
+              </form>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4517.561103533849!2d37.7176415933089!3d55.51877221850531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aaf9470957483%3A0xc64382561057a048!2z0JrQsNC70LjQvdC-0LLQutCwLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2spl!4v1697990424263!5m2!1sru!2spl"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="footer__main">
+          <div class="footer__container">
+            <div class="footer__wrapper">
+              <div class="footer__title-left">
+                <div class="footer__top-left">АРИАВЕНТО | 2023</div>
+                <div class="footer__bottom-left footer-paragraph">
+                  Группа компаний «Алекс Инижиниринг»
+                </div>
+              </div>
+              <a
+                href="#"
+                class="footer__bottom-right footer__bottom-right_mobile footer-paragraph">
+                Политика обработки персональных данных
+              </a>
+              <div class="page-navigation">
+                <ul>
+                  <li>
+                    <a href="#">Продукция </a>
+                  </li>
+                  <li>
+                    <a href="#">О компании </a>
+                  </li>
+                  <li>
+                    <a href="#">Сертификаты </a>
+                  </li>
+                  <li>
+                    <a href="#">Проекты </a>
+                  </li>
+                  <li>
+                    <a href="#">Отзывы </a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__title-right">
+                <div class="footer__top-right">
+                  Разработано в
+                  <span class="footer__svg"
+                    ><img src="img/icons/gazizov.svg" alt="gazizov"
+                  ></span>
+                </div>
+                <a href="#" class="footer__bottom-right footer-paragraph">
+                  Политика обработки персональных данных
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="overlay"></div>
+
+      <div class="popup order-call">
+        <div class="popup__card">
+          <button class="popup__close-btn">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path d="M21.1201 2.12L13.2401 10L21.1201 17.88L19.0001 20L9.00012 10L19.0001 0L21.1201 2.12Z" fill="white"/>
+                <path d="M0 2.12L7.88 10L0 17.88L2.12 20L12.12 10L2.12 0L0 2.12Z" fill="white"/>
+              </g>
+            </svg>
+          </button>
+          <div class="popup__card-body">
+            <div class="popup__decor">
+              <img src="./img/decor/decor-green.svg" alt="">
+            </div>
+
+            <h2 class="popup__title">Оставьте ваш номер телефона</h2>
+            <p class="popup__paragraph">и мы с вами свяжемся</p>
+
+            <form class="popup__form">
+              <input type="text" class="popup__input input-field" placeholder="Телефон">
+              <button class="popup__button button button_filled">Отправить</button>
+            </form>
+
+            <p class="popup__policy">
+              Нажимая кнопку Вы соглашаетесь с <a href="#">Политикой обработки персональных данных</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/actions.js"></script>
+    <script src="./js/scroll-controll.js"></script>
+    <script src="./js/bullets.js"></script>
+    <script src="./js/popups.js"></script>
+    <script src="./js/review.js"></script>
+  </body>
+</html>
