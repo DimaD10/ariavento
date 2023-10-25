@@ -315,9 +315,78 @@ main {
     max-height: none;
   }
 }
+.productivity__fullscreen-slider {
+  max-width: 80vw;
+  @media (max-width: 567.98px) {
+    max-width: 86vw;
+  }
+  .swiper-slide {
+    height: 80vh;
+    @media (max-width: 991.98px) {
+      height: 70vh;
+    }
+    @media (max-width: 767.98px) {
+      height: 60vh;
+    }
+    @media (max-width: 667.98px) {
+      height: 50vh;
+    }
+    @media (max-width: 480px) {
+      height: 35vh;
+    }
+  }
+}
+.reviews__fullscreen-slider {
+  max-width: 48vw;
+  @media (max-width: 1200px) {
+    max-width: 60vw;
+  }
+  @media (max-width: 991.98px) {
+    max-width: 80vw;
+  }
+  @media (max-width: 567.98px) {
+    max-width: 86vw;
+  }
+  overflow: hidden;
+  .swiper-slide {
+    width: 48vw;
+    @media (max-width: 1200px) {
+      width: 60vw;
+    }
+    @media (max-width: 991.98px) {
+      width: 80vw;
+    }
+    max-width: none;
+
+    &.hidden {
+      padding-right: 0;
+
+      .review__body {
+        padding-right: 10px;
+        &::after {
+          opacity: 0;
+        }
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          border-radius: 4px;
+          //background: #8cb7f8;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #0c59cd;
+          border-radius: 3px;
+        }
+      }
+      .review__header {
+        margin-right: 18px;
+      }
+    }
+  }
+}
 
 .fullscreen-slider {
-
   .swiper-slide {
     cursor: pointer;
   }
@@ -327,6 +396,16 @@ main {
       opacity: 1;
       pointer-events: all;
     }
+    .fullscreen-slider__slider {
+      pointer-events: all;
+    }
+    .fullscreen-slider__slider .swiper-slide {
+      pointer-events: all;
+    }
+  }
+
+  .fullscreen-slider__slider .swiper-slide {
+    pointer-events: none;
   }
 
   &__parrent {
@@ -382,6 +461,13 @@ main {
     }
   }
   &__slider {
+    pointer-events: none;
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: -60px;
+    }
+
     .swiper-pagination-bullet {
       background-color: #fff;
       transition: opacity ease $animSpeed, background-color ease $animSpeed;

@@ -106,6 +106,26 @@ const productivity = new Swiper(".productivity__slider", {
     },
   },
 });
+const productivityFullscreen = new Swiper(".productivity__fullscreen-slider", {
+  loop: true,
+  effect: "fade",
+
+  pagination: {
+    el: ".productivity__pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".productivity__slider-fullscreen-btn_next",
+    prevEl: ".productivity__slider-fullscreen-btn_prev",
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  thumbs: {
+    swiper: productivity,
+  },
+});
 
 const reviews = new Swiper(".reviews__slider", {
   loop: true,
@@ -136,5 +156,24 @@ const reviews = new Swiper(".reviews__slider", {
       slidesPerView: 3,
       spaceBetween: 20,
     },
+  },
+});
+const reviewsFullscreen = new Swiper(".reviews__fullscreen-slider", {
+  loop: true,
+
+  pagination: {
+    el: ".reviews__pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".reviews__slider-fullscreen-btn_next",
+    prevEl: ".reviews__slider-fullscreen-btn_prev",
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  thumbs: {
+    swiper: reviews,
   },
 });

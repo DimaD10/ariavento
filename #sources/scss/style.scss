@@ -1706,23 +1706,36 @@
     max-width: 100%;
   }
 
+  &.hidden {
+    .review__body {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
   // .review__body
 
   &__body {
-    max-height: 256px;
+    height: 256px;
     overflow: hidden;
 
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       pointer-events: none;
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
       height: 120px;
-      background: linear-gradient(0deg, #E6F0FE 9.78%, rgba(230, 240, 254, 0.00) 108.7%);
+      opacity: 0;
+      background: linear-gradient(
+        0deg,
+        #e6f0fe 9.78%,
+        rgba(230, 240, 254, 0) 108.7%
+      );
     }
   }
 
@@ -1735,6 +1748,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    padding-bottom: 6px;
+    display: inline-block;
   }
 
   // .review__header
