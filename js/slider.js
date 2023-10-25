@@ -54,6 +54,25 @@ const sertificates = new Swiper(".sertificates__slider", {
     },
   },
 });
+const sertificatesFullscreen = new Swiper(".sertificates__slider-fullscreen", {
+  loop: true,
+
+  pagination: {
+    el: ".sertificates__pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".sertificates__slider-fullscreen-btn_next",
+    prevEl: ".sertificates__slider-fullscreen-btn_prev",
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  thumbs: {
+    swiper: sertificates,
+  },
+});
 
 const productivity = new Swiper(".productivity__slider", {
   loop: true,
