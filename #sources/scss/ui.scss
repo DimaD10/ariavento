@@ -438,6 +438,8 @@ main {
     .swiper-button-prev,
     .swiper-button-next {
       background-color: #e6f0fe;
+      opacity: 0 !important;
+      pointer-events: none !important;
 
       &:hover {
         background-color: $blue;
