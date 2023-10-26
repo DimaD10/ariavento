@@ -27,6 +27,18 @@ document.addEventListener("click", (e) => {
       document.body.style.overflow = "hidden";
     }
   }
+  if (e.target.classList.contains("call-complete-order")) {
+    if (document.querySelector(".complete-order")) {
+      document.querySelector(".complete-order").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+  }
+  if (e.target.classList.contains("call-order-not-avarage-size")) {
+    if (document.querySelector(".order-not-avarage-size")) {
+      document.querySelector(".order-not-avarage-size").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+  }
 
   if (e.target.closest(".popup__close-btn")) {
     e.target.closest(".popup").classList.remove("active");

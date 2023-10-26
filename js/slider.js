@@ -166,7 +166,6 @@ const reviewsFullscreen = new Swiper(".reviews__fullscreen-slider", {
   spaceBetween: 20,
 });
 
-
 const sameProducts = new Swiper(".same-products__slider", {
   loop: true,
 
@@ -194,6 +193,63 @@ const sameProducts = new Swiper(".same-products__slider", {
     },
     992: {
       slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+const productThumbs = new Swiper(".product-page__slider-thumbs", {
+  loop: true,
+
+  slidesPerView: 5,
+  spaceBetween: 14,
+  breakpoints: {
+    320: {
+      spaceBetween: 6,
+    },
+    668: {
+      spaceBetween: 14,
+    },
+  },
+});
+const product = new Swiper(".product-page__slider", {
+  loop: true,
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+  thumbs: {
+    swiper: productThumbs,
+  },
+});
+
+const productFullscreen = new Swiper(".product-page__slider-fullscreen", {
+  loop: true,
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+});
+
+const details = new Swiper(".details__slider", {
+  slidesPerView: "auto",
+
+  navigation: {
+    nextEl: ".details__slider-btn_next",
+    prevEl: ".details__slider-btn_prev",
+  },
+
+  scrollbar: {
+    el: ".details__scrollbar",
+    draggable: true,
+  },
+
+  breakpoints: {
+    320: {
+      spaceBetween: 10,
+    },
+    480: {
+      spaceBetween: 15,
+    },
+    768: {
       spaceBetween: 20,
     },
   },
